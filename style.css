@@ -1,0 +1,266 @@
+* {
+    font-size: 16px;
+    margin: 0;
+    font-family: "Epilogue", sans-serif;
+}
+
+.opColor {
+    background-color: rgb(224, 224, 224);
+    margin: 5px;
+    padding: 5px;
+}
+
+body .card {
+    display: none;
+    height: 34vw;
+    position: absolute;
+    top: 49px;
+    width: 20vw;
+    background-color: rgb(245,245,245);
+    box-shadow: 2vw 2vw 12vw 3vw #ccc;
+    z-index: 111;
+    border-radius: 10px;
+    right: 69px;
+}
+
+.header-title {
+    font-size: 16px;
+}
+
+body .card #header {
+    border-radius: 10px 10px 0px 0px;
+    background: rgb(112,97,144);
+    padding: 0vw;
+}
+
+body .card #header h1 {
+    color: #fff;
+    font-size: 2vw;
+    font-family: "Finger Paint", cursive;
+    padding: 1vw;
+}
+
+body .card #message-section::-webkit-scrollbar {
+    width: 10px;
+}
+
+body .card #message-section {
+  display: none;
+  padding: 1vw;
+}
+
+body .card #message-section::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+
+body .card #message-section::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+}
+
+body .card #message-section #bot,
+body .card #message-section #user {
+    position: relative;
+    bottom: 0;
+    min-height: 1.5vw;
+    padding: 1vw;
+    margin: 1.5vw 0;
+}
+
+body .card #message-section #user {
+    float: right;
+}
+
+body .card #message-section #user #user-response {
+    color: black;
+}
+
+body .card #message-section .message {
+    color: #000;
+    clear: both;
+    line-height: 1.2vw;
+    font-size: 1.2vw;
+    padding: 8px;
+    position: relative;
+    margin: 8px 0;
+    max-width: 85%;
+    word-wrap: break-word;
+    z-index: 2;
+}
+
+body .card #input-section {
+    z-index: 1;
+}
+
+body .card .btn-send {
+    font-size: 16px !important;
+    outline: none;
+    color: white;
+    border-left: 0.1px solid white;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-radius: 0px 0px 10px 0px;
+    background-color: rgb(112,97,144);
+    width: 50%;
+}
+
+body .card .btn-prev {   
+    font-size: 16px !important;
+    outline: none;
+    color: white;
+    border-right:0.1px solid white;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-radius: 0px 0px 0px 10px;
+    background-color: rgb(112,97,144);
+    width: 50%;
+}
+
+body .card .send .circle i {
+    font-size: 2vw;
+    margin-left: 0.5vw;
+}
+
+.ic {
+    font-size: 16px;
+}
+
+.ic:hover {
+    cursor: pointer;
+}
+
+.sticky-icon {
+    z-index: 10;
+    position: fixed;
+    top: 40%;
+    right: 0%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Facebook {
+    border-radius: 50px 0px 0px 50px;
+    background-color: #7152a0;
+    color: #FFF;
+    padding: 10px;
+
+}
+
+#header {
+    color: white;
+}
+
+.modal {
+    position: absolute;
+    z-index: 1060;
+    background-color: #1718186b;
+    outline: 0;
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    top: 26%;
+    margin: 0.5rem;
+    pointer-events: none;
+}
+
+.modal-footer {
+    justify-content: center;
+}
+
+.qmsg {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+
+.rmsg {
+    margin-top: 5px;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.quebtn {
+    outline: none;
+    padding: 5px 24px;
+    background: rgb(224, 224, 224);
+    border: none;
+    border-radius: 5px;
+}
+
+.questionDiv {
+    border-bottom: 1px solid rgb(224, 224, 224);
+    padding-bottom: 7px;
+}
+
+.modal-dialog {
+    position: relative;
+    width: 56%;
+    left: 21%;
+    top: 36%;
+    margin: 0.5rem;
+    pointer-events: none;
+}
+
+.modal-header {
+    padding: 1px 15px;
+    ;
+}
+
+.modal-body {
+    padding: 1px 15px;
+}
+
+.modal-footer {
+    padding: 1px 15px;
+}
+
+body .card #input-section input {
+    color: #000;
+    outline: none;
+    height: 3vw;
+    width: 97%;
+    padding-left: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+body .card #input-section {
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.btn-padding {
+    padding: 3px 5px;
+}
+
+
+#welcomeMessage{
+        padding: 1vw;
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+.cardContainer{
+    position: relative;
+    height: 100%;
+}
+
+.btn-footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+
+label{
+    display: inline;
+}

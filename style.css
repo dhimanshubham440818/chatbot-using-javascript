@@ -12,7 +12,7 @@
 
 body .card {
     display: none;
-    height: 34vw;
+    /* height: 34vw; */
     position: absolute;
     top: 49px;
     width: 20vw;
@@ -220,16 +220,6 @@ body .card .send .circle i {
     padding: 1px 15px;
 }
 
-body .card #input-section input {
-    color: #000;
-    outline: none;
-    height: 3vw;
-    width: 97%;
-    padding-left: 10px;
-    border: none;
-    border-radius: 10px;
-}
-
 body .card #input-section {
     z-index: 1;
     display: flex;
@@ -255,11 +245,6 @@ body .card #input-section {
     height: 100%;
 }
 
-.btn-footer{
-    position: absolute;
-    width: 100%;
-    bottom: 0px;
-}
 
 label{
     display: inline;

@@ -112,7 +112,6 @@ function enableDisable(targetElement, value) {
   var prevBtn = document.getElementById(targetElement);
   prevBtn.disabled = !value;
 }
-
 function isAnyCheckboxChecked(options) {
   for (var i = 0; i < options.length; i++) {
     var checkbox = document.getElementById(i);
@@ -122,7 +121,6 @@ function isAnyCheckboxChecked(options) {
   }
   return false;
 }
-
 function checkboxClicked(index, options, value, score) {
   updateArray(index, value, score)
   if (isAnyCheckboxChecked(options)) {
@@ -131,7 +129,6 @@ function checkboxClicked(index, options, value, score) {
     enableDisable('sendBtn', false)
   }
 }
-
 function createOptions(index, question, options, scores) {
   var targetElement = document.getElementById("message-section");
   var parentElement = document.createElement("div");

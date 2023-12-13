@@ -106,9 +106,9 @@
       <div id="header" class="p-2">
         <div class="container">
           <div class="row">
-            <div class="d-flex justify-content-between">
-              <div class=" header-title">Virtual assistant</div>
-              <div class="col text-end">
+            <div class="">
+              <div class="header-title">Virtual assistant</div>
+              <div class="icon2 col text-end">
                 <i class="zmdi zmdi-minus px-2 ic " onclick="popUp('close')"></i>
                 <i class="zmdi zmdi-close px-1 ic" onclick="popUp('open-model')"></i>
               </div>
@@ -122,12 +122,12 @@
         </div>
         <div class="opColor">(B) <a href="https://dev.rhope.in/search/doctor/Psychologist">Psychologist</a>
         </div>
-        <div class="opColor">(C) <a href="#" onclick="notSure()">Not Sure</a></div>
+        <div class="opColor">(C) <a href="#" onclick="quick('notsure')">Not Sure</a></div>
       </div>
       <div id="message-section"></div>
         <div id="input-section" class="btn-footer">
-          <button id="prevBtn" class="btn-prev btn" onclick="previousQuestion()" disabled>PREV</button>
-          <button id="sendBtn" class="btn-send btn" onclick="nextQuestion()" disabled>NEXT</button>
+          <button id="prevBtn" class="btn-prev btn" onclick="quick('prev')" disabled>PREV</button>
+          <button id="sendBtn" class="btn-send btn" onclick="quick('next')" disabled>NEXT</button>
         </div>
       <div class="modal" id="model">
         <div class="modal-dialog">

@@ -291,7 +291,7 @@ function addResult(condition) {
   let container = document.createElement('div');
   let childDiv = document.createElement('div');
   let anchorTag = document.createElement('a');
-  childDiv.textContent = `Thank You! You SCORE is ${0}   i will suggest you the list of top`;
+  childDiv.textContent = `Thank You! You SCORE is ${ 0 }   i will suggest you the list of top`;
   if (condition) {
     anchorTag.textContent = 'Psychiatrist';
     anchorTag.setAttribute('href', 'https://dev.rhope.in/search/doctor/Psychiatrist');

@@ -25,12 +25,8 @@ body .card {
 
 .header-title {
     font-size: 16px;
-    display: inline;
 }
 
-.icon2{
-    display: inline;
-}
 
 body .card #header {
     border-radius: 10px 10px 0px 0px;

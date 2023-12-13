@@ -163,7 +163,7 @@ body .card .send .circle i {
 
 .modal-dialog {
     position: relative;
-    width: auto;
+    /* width: auto; */
     top: 26%;
     margin: 0.5rem;
     pointer-events: none;
@@ -201,8 +201,8 @@ body .card .send .circle i {
 
 .modal-dialog {
     position: relative;
-    width: 56%;
-    left: 21%;
+    /* width: 56%; */
+    /* left: 21%; */
     top: 11%;
     margin: 0.5rem;
     pointer-events: none;

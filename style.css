@@ -13,8 +13,8 @@
 body .card {
     display: none;
     /* height: 34vw; */
-    position: absolute;
-    top: 23%;
+    position: fixed;
+    bottom: 19%;
     width: 20vw;
     background-color: rgb(245, 245, 245);
     box-shadow: 2vw 2vw 12vw 3vw #ccc;
@@ -77,7 +77,7 @@ body .card #message-section #user #user-response {
     color: black;
 }
 
-body .card #message-section .message {
+body .card #message-section body .card.message {
     color: #000;
     clear: both;
     line-height: 1.2vw;

@@ -14,7 +14,7 @@ body .card {
     display: none;
     /* height: 34vw; */
     position: fixed;
-    bottom: 19%;
+    top: 42%;
     width: 20vw;
     background-color: rgb(245, 245, 245);
     box-shadow: 2vw 2vw 12vw 3vw #ccc;
@@ -249,6 +249,6 @@ label {
 @media only screen and (max-width: 768px) {
     body .card{
         width: 70%;
-        top: 27%;
+        top: 42%;
     }
 }

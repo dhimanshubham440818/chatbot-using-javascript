@@ -182,7 +182,7 @@ function createOptions(index, question, options, scores) {
       checkBox.id = i;
       checkBox.setAttribute("data-score", scores[i]);
       if (doesValueExist(index, options[i])) {
-         checkBox.checked = true;
+        checkBox.checked = true;
         enableDisable('sendBtn', true)
 
       }
@@ -285,19 +285,20 @@ function quick(value) {
 function calculateTotalScore(responses) {
   let totalScore = 0;
   for (const index in responses) {
-      if (responses.hasOwnProperty(index)) {
-          totalScore += responses[index].score;
-      }
+    if (responses.hasOwnProperty(index)) {
+      totalScore += responses[index].score;
+    }
   }
   return totalScore;
 }
 
 function addResult(condition) {
+  enableDisable('sendBtn', false);
   let targetElement = document.getElementById('message-section')
   let container = document.createElement('div');
   let childDiv = document.createElement('div');
   let anchorTag = document.createElement('a');
-  childDiv.textContent = `Thank You! You SCORE is ${ calculateTotalScore(userResponses) }   i will suggest you the list of top`;
+  childDiv.textContent = `Thank You! You SCORE is ${calculateTotalScore(userResponses)}   i will suggest you the list of top`;
   if (condition) {
     anchorTag.textContent = 'Psychiatrist';
     anchorTag.setAttribute('href', 'https://dev.rhope.in/search/doctor/Psychiatrist');

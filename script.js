@@ -58,6 +58,8 @@ const queArray = [
 
 ];
 
+var userResponses = {};
+
 function popUp(value) {
   if (value === 'open') {
     const targetElement = document.getElementById("card");
@@ -82,6 +84,7 @@ function popUp(value) {
     targetElement.style.display = 'none';
   }
   else if (value === 'clearAndClose') {
+    userResponses = {};
     const ele = document.getElementById("model");
     ele.style.display = 'none';
     let targetElement = document.getElementById('welcomeMessage')
@@ -94,7 +97,7 @@ function popUp(value) {
     }
   }
 }
-var userResponses = {};
+
 function updateArray(index, value, score) {
   if (userResponses[index] === undefined) {
     userResponses[index] = { value: [], score: 0 };

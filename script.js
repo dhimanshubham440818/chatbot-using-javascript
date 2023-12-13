@@ -77,6 +77,8 @@ function popUp(value) {
   }
   else if (value === 'clearAndClose') {
     userResponses = {};
+    enableDisable('sendBtn', false);
+    enableDisable('prevBtn', false);
     const ele = document.getElementById("model");
     ele.style.display = 'none';
     let targetElement = document.getElementById('welcomeMessage')

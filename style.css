@@ -16,7 +16,7 @@ body .card {
     position: absolute;
     top: 49px;
     width: 20vw;
-    background-color: rgb(245,245,245);
+    background-color: rgb(245, 245, 245);
     box-shadow: 2vw 2vw 12vw 3vw #ccc;
     z-index: 111;
     border-radius: 10px;
@@ -30,7 +30,7 @@ body .card {
 
 body .card #header {
     border-radius: 10px 10px 0px 0px;
-    background: rgb(112,97,144);
+    background: rgb(112, 97, 144);
     padding: 0vw;
 }
 
@@ -46,8 +46,8 @@ body .card #message-section::-webkit-scrollbar {
 }
 
 body .card #message-section {
-  display: none;
-  padding: 1vw;
+    display: none;
+    padding: 1vw;
 }
 
 body .card #message-section::-webkit-scrollbar-track {
@@ -103,20 +103,20 @@ body .card .btn-send {
     border-bottom: none;
     border-right: none;
     border-radius: 0px 0px 10px 0px;
-    background-color: rgb(112,97,144);
+    background-color: rgb(112, 97, 144);
     width: 50%;
 }
 
-body .card .btn-prev {   
+body .card .btn-prev {
     font-size: 16px !important;
     outline: none;
     color: white;
-    border-right:0.1px solid white;
+    border-right: 0.1px solid white;
     border-top: none;
     border-bottom: none;
     border-left: none;
     border-radius: 0px 0px 0px 10px;
-    background-color: rgb(112,97,144);
+    background-color: rgb(112, 97, 144);
     width: 50%;
 }
 
@@ -233,20 +233,19 @@ body .card #input-section {
     padding: 3px 5px;
 }
 
-
-#welcomeMessage{
-        padding: 1vw;
-        overflow-y: auto;
-        scrollbar-width: thin;
-        scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+#welcomeMessage {
+    padding: 1vw;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
 }
 
-.cardContainer{
+.cardContainer {
     position: relative;
     height: 100%;
 }
 
 
-label{
+label {
     display: inline;
 }

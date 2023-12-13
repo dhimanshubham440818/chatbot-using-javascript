@@ -1,35 +1,29 @@
 const queArray = [
-
   {
     question: "Over the past two weeks, how often have you felt really sad or down?",
     options: ["Not at all", "Rarely", "Sometimes", "Often", 'Almost always'],
     scores: [1, 2, 3, 4, 5]
   },
-
   {
     question: "In the last month, how often have you had trouble sleeping, either difficulty falling asleep or staying asleep?",
     options: ["Not at all", "Rarely", "Sometimes", "Often", 'All the time'],
     scores: [1, 2, 3, 4, 5]
   },
-
   {
     question: "Over the past six months, how often have you found it hard to concentrate or make decisions?",
     options: ["Not at all", "Rarely", "Sometimes", "Often", 'Constantly'],
     scores: [1, 2, 3, 4, 5]
   },
-
   {
     question: "In the last year, how often have you lost interest in activities you used to enjoy?",
     options: ["Not at all", "Rarely", "Sometimes", "Often", 'Almost always'],
     scores: [1, 2, 3, 4, 5]
   },
-
   {
     question: "Over the last six months, how often have you felt unusually angry or easily irritated?",
     options: ["Not at all", "Rarely", "Sometimes", "Often", 'All the time'],
     scores: [1, 2, 3, 4, 5]
   },
-
   {
     question: "In the past month, have you had thoughts of hurting yourself or others?",
     options: ["No", "Rarely, and I wouldn't act on them", "Sometimes, and I wouldn't act on them", "Yes, and I'm worried I might act on them", "Yes, and I'm planning to act on them"],
@@ -55,11 +49,9 @@ const queArray = [
     options: ["No changes", "Small changes", "Moderate changes", "Significant changes, losing appetite or weight", "Significant changes, eating a lot more or gaining weight  "],
     scores: [1, 2, 3, 4, 5]
   },
-
 ];
 
 var userResponses = {};
-
 function popUp(value) {
   if (value === 'open') {
     const targetElement = document.getElementById("card");
@@ -130,6 +122,7 @@ function isAnyCheckboxChecked(options) {
   }
   return false;
 }
+
 function checkboxClicked(index, options, value, score) {
   updateArray(index, value, score)
   if (isAnyCheckboxChecked(options)) {
@@ -138,6 +131,7 @@ function checkboxClicked(index, options, value, score) {
     enableDisable('sendBtn', false)
   }
 }
+
 function createOptions(index, question, options, scores) {
   var targetElement = document.getElementById("message-section");
   var parentElement = document.createElement("div");
@@ -188,7 +182,7 @@ function createOptions(index, question, options, scores) {
       checkBox.id = i;
       checkBox.setAttribute("data-score", scores[i]);
       if (doesValueExist(index, options[i])) {
-        checkBox.checked = true;
+         checkBox.checked = true;
         enableDisable('sendBtn', true)
 
       }
@@ -288,13 +282,22 @@ function quick(value) {
   }
 }
 
+function calculateTotalScore(responses) {
+  let totalScore = 0;
+  for (const index in responses) {
+      if (responses.hasOwnProperty(index)) {
+          totalScore += responses[index].score;
+      }
+  }
+  return totalScore;
+}
+
 function addResult(condition) {
-  console.log(userResponses)
   let targetElement = document.getElementById('message-section')
   let container = document.createElement('div');
   let childDiv = document.createElement('div');
   let anchorTag = document.createElement('a');
-  childDiv.textContent = `Thank You! You SCORE is ${ 0 }   i will suggest you the list of top`;
+  childDiv.textContent = `Thank You! You SCORE is ${ calculateTotalScore(userResponses) }   i will suggest you the list of top`;
   if (condition) {
     anchorTag.textContent = 'Psychiatrist';
     anchorTag.setAttribute('href', 'https://dev.rhope.in/search/doctor/Psychiatrist');

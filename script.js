@@ -226,7 +226,6 @@ function createOptions(index, question, options, scores) {
     targetElement.appendChild(parentElement);
   }
 }
-
 let index = 0;
 function quick(value) {
   if (value === 'notsure') {

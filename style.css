@@ -239,18 +239,13 @@ body .card #input-section {
     scrollbar-width: thin;
     scrollbar-color: var(--thumbBG) var(--scrollbarBG);
 }
-
 .cardContainer {
     position: relative;
     height: 100%;
 }
-
-
 label {
     display: inline;
 }
-
-
 @media only screen and (max-width: 768px) {
     body .card{
         width: 70%;

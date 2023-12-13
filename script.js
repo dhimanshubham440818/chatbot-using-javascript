@@ -237,7 +237,7 @@ function quick(value) {
     messageElement.style.display = 'block';
     createOptions(index, queArray[index].question, queArray[index].options, queArray[index].scores);
   }
-  else if (value === 'next') {
+  else if (value === 'next') {Your
     if (index < queArray.length - 1) {
       index = ++index;
       enableDisable('sendBtn', false)
@@ -278,7 +278,6 @@ function quick(value) {
     }
   }
 }
-
 function calculateTotalScore(responses) {
   let totalScore = 0;
   for (const index in responses) {
@@ -288,14 +287,13 @@ function calculateTotalScore(responses) {
   }
   return totalScore;
 }
-
 function addResult(condition) {
   enableDisable('sendBtn', false);
   let targetElement = document.getElementById('message-section')
   let container = document.createElement('div');
   let childDiv = document.createElement('div');
   let anchorTag = document.createElement('a');
-  childDiv.textContent = `Thank You! You SCORE is ${calculateTotalScore(userResponses)}   i will suggest you the list of top`;
+  childDiv.textContent = `Thank You! Your SCORE is ${calculateTotalScore(userResponses)}   i will suggest you the list of top`;
   if (condition) {
     anchorTag.textContent = 'Psychiatrist';
     anchorTag.setAttribute('href', 'https://dev.rhope.in/search/doctor/Psychiatrist');

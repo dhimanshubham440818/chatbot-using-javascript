@@ -236,7 +236,7 @@ function quick(value) {
     messageElement.style.display = 'block';
     createOptions(index, queArray[index].question, queArray[index].options, queArray[index].scores);
   }
-  else if (value === 'next') {Your
+  else if (value === 'next') {
     if (index < queArray.length - 1) {
       index = ++index;
       enableDisable('sendBtn', false)
